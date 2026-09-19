@@ -1,0 +1,51 @@
+.header {
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: transparent;
+  border-bottom-width: 2px;
+}
+body{
+    background-image: url("wp13006577.jpg");
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+    display: flex;
+    align-items: center;
+}
+
+.right-section {
+  width:180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.logo{
+    height: 60px;
+}
+.header {
+    background :rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);   
+    border-radius: 16px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    margin-top: 35px ;
+}

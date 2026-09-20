@@ -1,25 +1,30 @@
-.header {
-  height: 55px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 100;
-
-  background-color: transparent;
-  border-bottom-width: 2px;
-}
 body{
-    background-image: url("wp13006577.jpg");
+    
     background-size: cover;       
     background-position: center;   
     background-repeat: no-repeat; 
     background-attachment: fixed;
+    height: 3000px;
+}
+.header {
+  height: 55px;
+  margin-left: 100px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background :rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);   
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  margin-top: 35px ;
+  margin-bottom: 65px ;
 }
 .left-section{
     display: flex;
@@ -29,7 +34,6 @@ body{
     display: flex;
     align-items: center;
 }
-
 .right-section {
   width:180px;
   margin-right: 20px;
@@ -41,11 +45,37 @@ body{
 .logo{
     height: 60px;
 }
-.header {
+.content{
+    display: flex;
+    margin-left: 50px;
+    flex-direction:row;
+    justify-content: center;
+    flex:1;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1;
     background :rgba(255, 255, 255, 0.15); 
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.15);   
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    margin-top: 35px ;
+    padding-bottom: 40px;
+    max-width: 600px; 
+    min-width: 400px;
+}
+.moods{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:1;   
+}
+.c1, .c2, .c3, .c4 {
+    text-align: left;
+    margin-left: 160px;
+    border: 1px solid red; 
+    display: flex;
+    align-items: center;
 }

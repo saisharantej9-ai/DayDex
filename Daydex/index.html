@@ -1,22 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DayDex</title>
         <link rel="stylesheet" href="sty.css">
     </head>
     <body>
         <header class="header">
             <div class="left-section">
-                <img class=logo src="daydex-bi.svg" alt="DayDex Logo">
+                <img class="logo" src="daydex-bi.svg" alt="DayDex Logo">
             </div>
             <div class="right-section">
-                <div>
-                    Local Only
-                </div>
-                <div>
-                    DEVLOGS
-                </div>
+                <div>Local Only</div>
+                <div>DEVLOGS</div>
             </div>
         </header>
+        <div class="content">
+            <div class="info">
+                <div style="display: flex;justify-content: center;align-items: center;font-weight: 900;font-size: 1.7em;"><h1>DayDex</h1></div>
+                <h2 style="text-align: center;font-weight: 700;font-size: 2.7em;font-weight: 700">Built to simplify tracking your progress.</h2>
+                <h2 style="text-align: center">DAYDEX Daily Journaling made easy.</h2>
+                <p style="text-align: center;font-size: 1.3em;">NOTE: the server to run google sign-in takes about 2 mins to wake up.So pease reload site after 2 mins. will soon shift to serverless function to avoid this.</p>
+                <h3 style="text-align: center;">Click on any day to assign notes, colors and todo list</h3>
+            </div>
+            <div class="moods">
+                <h1 style="text-align: center;font-size: 1.7em;font-weight: 500;">Moods</h1>
+                    <div class="c1"><p>SuperGood  [0%]</p></div>
+                    <div class="c2"><p>Good       [0%]</p></div>
+                    <div class="c3"><p>Not Bad    [0%]</p></div>
+                    <div class="c4"><p>Bad        [0%]</p></div>
+            </div>
+        </div>
+
     </body>
 </html>

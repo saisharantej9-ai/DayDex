@@ -1,5 +1,5 @@
 body{
-    
+    background-color: rgb(41, 155, 140);
     background-size: cover;       
     background-position: center;   
     background-repeat: no-repeat; 
@@ -45,37 +45,50 @@ body{
 .logo{
     height: 60px;
 }
-.content{
-    display: flex;
-    margin-left: 50px;
-    flex-direction:row;
-    justify-content: center;
-    flex:1;
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
+
 .info{
+    display:grid;
+    margin-left: 100px;
+}
+.moods{
+    display:grid;
+    margin-top: 100px;
+}
+.c1, .c2, .c3, .c4 {
+    text-align: left;
+    margin-left: 160px;
+    border: 1px solid ; 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex:1;
+    border-radius: 10px;
+    align-items: center;
+    padding-left: 10px;
+    height: 60px;
+    width: 300px;
+    margin-left: 250px;
+    z-index: 100;
     background :rgba(255, 255, 255, 0.15); 
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.15);   
     border-radius: 16px;
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    padding-bottom: 40px;
-    max-width: 600px; 
-    min-width: 400px;
 }
-.moods{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex:1;   
+.c1{
+    background-color: #0b856b;
 }
-.c1, .c2, .c3, .c4 {
-    text-align: left;
-    margin-left: 160px;
-    border: 1px solid red; 
-    display: flex;
-    align-items: center;
+.c2{
+    background-color: #99d22a;
+}
+.c3{
+    background-color: #ea6c1f;
+}
+.c4{
+    background-color: #F44336;
 }
